@@ -1,0 +1,48 @@
+<nav id="nav">
+  <ul id="nav-list" class="list-unstyled clearfix">
+    <li class="nav-item" ui-sref-active-eq="active">
+      <a href ui-sref="skin">SKIN</a>
+    </li>
+    <li class="nav-item" ui-sref-active-eq="active">
+      <a href ui-sref="ui.getstarted">COMPONENTS</a>
+    </li>
+  </ul>
+  <a id="toggle_btn" href="javascript:;" role="button">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>
+  </a>
+  <aside class="skin-aside-menu" ng-if="vm.$state.is('skin')">
+    <ul class="list-unstyled">
+      <li class="menu-item"><a href ui-sref="skin.gettingStarted">Getting started</a></li>
+      <li class="menu-item">
+        <div class="title aside-menu-title">Component list</div>
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('button')">Button</a></li>
+          <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('form')">Form</a></li>
+          <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('panel')">Panel</a></li>
+          <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('table')">Table</a></li>
+          <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('modal')">Modal</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a class="github-button" href="https://github.com/ffan-fe/bp-admin-skin" data-style="mega" data-icon="octicon-eye" aria-label="Watch ffan-fe/bp-admin-skin on GitHub">Watch</a>
+    <a class="github-button" href="https://github.com/ffan-fe/bp-admin-skin" data-style="mega" data-icon="octicon-star" aria-label="Star ffan-fe/bp-admin-skin on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/ffan-fe/bp-admin-skin/fork" data-style="mega" data-icon="octicon-repo-forked" aria-label="Fork ffan-fe/bp-admin-skin on GitHub">Fork</a>
+  </aside>
+  <aside class="components-aside-menu" ng-if="vm.$state.includes('ui')">
+    <ul class="list-unstyled">
+      <li class="menu-item"><a href ui-sref="ui.getstarted">Getting started</a></li>
+      <li class="menu-item"><a href="/docs/index.html#/api" target="_blank">Docs</a></li>
+      <li class="menu-item">
+        <div class="title aside-menu-title">Example list</div>
+        <ul class="list-unstyled">
+          <li class="menu-item"><a href ui-sref="ui.button">Button</a></li>
+          <li class="menu-item"><a href ui-sref="ui.checkbox">Checkbox</a></li>
+          <li class="menu-item"><a href ui-sref="ui.radiobox">Radiobox</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a class="github-button" href="https://github.com/ffan-fe/Anaheim" data-style="mega" data-icon="octicon-eye" aria-label="Watch ffan-fe/Anaheim on GitHub">Watch</a>
+    <a class="github-button" href="https://github.com/ffan-fe/Anaheim" data-style="mega" data-icon="octicon-star" aria-label="Star ffan-fe/Anaheim on GitHub">Star</a> 
+    <a class="github-button" href="https://github.com/ffan-fe/Anaheim/fork" data-style="mega" data-icon="octicon-repo-forked" aria-label="Fork ffan-fe/Anaheim on GitHub">Fork</a>
+  </aside>
+</nav>

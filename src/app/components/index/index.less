@@ -1,0 +1,134 @@
+
+@media screen {
+  #skin_space {
+    left: 0px;
+    .logo {
+      left: 50%;
+      top: 200px;
+      width: 240px;
+      height: 240px;
+      margin-left: -120px;
+      padding-top: 250px;
+      background: url(./images/sun.png) no-repeat;
+    }
+  }
+  //
+  #component_space {
+    right: 0px;
+    .logo {
+      left: 50%;
+      top: 250px;
+      width: 194px;
+      height: 194px;
+      margin-left: -92px;
+      padding-top: 204px;
+      background: url(./images/moon.png) no-repeat;
+    }
+  }
+  // #skin_space 和 #component_space 的超类
+  .index-space {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 0px solid #000;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+    // 动画球
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 100%;
+      background-color: rgba(0, 11, 27, 0.22);
+      content: "";
+      cursor: pointer;
+      transition: transform 500ms ease-out;
+      transform: scale(0);
+    }
+    &:hover {
+      &:before {
+        transform: scale(2);
+      }
+      .logo {
+        opacity: 1;
+      }
+    }
+    //
+    .logo {
+      position: absolute;
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      opacity: 0.4;
+      transition: opacity 200ms linear;
+    }
+    a {
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .index-space {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    .logo {
+      opacity: 1;
+    }
+  }
+  #skin_space {
+    .logo {
+      left: 50%;
+      top: 50%;
+      width: 240px;
+      height: 240px;
+      margin-left: -120px;
+      margin-top: -120px;
+      background: url(./images/sun.png) no-repeat;
+    }
+  }
+  #component_space {
+    top: 50%;
+    .logo {
+      left: 50%;
+      top: 50%;
+      width: 194px;
+      height: 194px;
+      margin-left: -92px;
+      margin-top: -92px;
+      background: url(./images/moon.png) no-repeat;
+    }
+  }
+}
+@media (max-width: 320px) {
+  #skin_space {
+    @size: 160px;
+    .logo {
+      width: @size;
+      height: @size;
+      padding-top: @size;
+      margin-top: -@size * 0.5;
+      margin-left: -@size * 0.5;
+      background-size: cover;
+    }
+  }
+  #component_space {
+    // 这里换一个实现方法玩一玩
+    @size: 140px;
+    .logo {
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding-top: 67%;
+      background-size: @size @size;
+      background-position: 50%;
+    }
+  }
+}

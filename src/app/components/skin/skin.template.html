@@ -1,0 +1,227 @@
+<fancy-nav></fancy-nav>
+<!--<aside class="skin-aside-menu">
+  <ul class="list-unstyled">
+    <li class="menu-item"><a href ui-sref="skin.gettingStarted">Getting started</a></li>
+    <li class="menu-item">
+      <div class="title">Component list</div>
+      <ul class="list-unstyled">
+        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('button')">Button</a></li>
+        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('form')">Form</a></li>
+        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('panel')">Panel</a></li>
+        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('table')">Table</a></li>
+        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('modal')">Modal</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>-->
+<section class="content-container">
+  <div>
+    <h3 id="button_anchor">Button</h3>
+    <div class="form-group">
+      <div>基本皮肤:</div>
+      <div>
+        <button type="button" class="btn bp-btn-default">（默认）default</button>
+        <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+        <button type="button" class="btn bp-btn-danger">（删除）danger</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <div>Disable状态:</div>
+      <div>
+        <button type="button" class="btn bp-btn-default" disabled>（默认尺寸）Default button</button>
+        <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Default button</button>
+        <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Default button</button>       
+      </div>
+    </div>
+    <div class="form-group">
+      <div>尺寸:</div>
+      <div>
+        <p>
+          <button type="button" class="btn bp-btn-primary btn-xs">（超小尺寸）Extra small button</button>
+        </p>
+        <p>
+          <button type="button" class="btn bp-btn-primary btn-sm">（小按钮）Small button</button>
+        </p>
+        <p>
+          <button type="button" class="btn bp-btn-primary">（默认尺寸）Default button</button>
+        </p>
+        <p>
+          <button type="button" class="btn bp-btn-primary btn-lg">（大按钮）Large button</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 id="form_anchor">Form</h3>
+    <div class="form-group">
+      <label class="control-label"><span class="required-star">*</span>龙破斩的咒文:</label>
+      <input type="text" class="form-control" placeholder="请输入" />
+    </div>
+    <div class="form-group">
+      <label for="control-label"><span class="required-star">*</span>Dropdown:</label>
+      <ul class="dropdown-menu" style="display: block; position: relative; width: 160px; float: none;">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="form-group">
+      <label for="control-label">Select:</label>
+      <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <h3 id="panel_anchor">Panel</h3>
+    <div class="panel bp-panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">通常的Panel</div>
+      </div>
+      <div class="panel-body">你能跟上我的节奏么</div>
+      <div class="panel-footer">
+        <button type="button" class="btn bp-btn-default">（默认）default</button>
+        <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+      </div>
+    </div>
+    <div class="panel bp-panel-danger">
+      <div class="panel-heading">
+        <div class="panel-title">我们再来个红色的</div>
+      </div>
+      <div class="panel-body">嘿~在这停顿</div>
+      <div class="panel-footer">
+        <button type="button" class="btn bp-btn-default">（默认）default</button>
+        <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 id="table_anchor">表格</h3>
+    <table class="table table-condensed table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>john@gmail.com</td>
+          <td>London, UK</td>
+        </tr>
+        <tr>
+          <td>Andy</td>
+          <td>andygmail.com</td>
+          <td>Merseyside, UK</td>
+        </tr>
+        <tr>
+          <td>姓名</td>
+          <td>邮箱</td>
+          <td>地址</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>john@gmail.com</td>
+          <td>London, UK</td>
+        </tr>
+        <tr>
+          <td>Andy</td>
+          <td>andygmail.com</td>
+          <td>Merseyside, UK</td>
+        </tr>
+        <tr>
+          <td>Frank</td>
+          <td>frank@gmail.com</td>
+          <td>Southampton, UK</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="panel bp-panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">Panel + Table</div>
+      </div>
+      <div class="panel-body">
+        <table class="table table-condensed table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>john@gmail.com</td>
+              <td>London, UK</td>
+            </tr>
+            <tr>
+              <td>Andy</td>
+              <td>andygmail.com</td>
+              <td>Merseyside, UK</td>
+            </tr>
+            <tr>
+              <td>姓名</td>
+              <td>邮箱</td>
+              <td>地址</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>john@gmail.com</td>
+              <td>London, UK</td>
+            </tr>
+            <tr>
+              <td>Andy</td>
+              <td>andygmail.com</td>
+              <td>Merseyside, UK</td>
+            </tr>
+            <tr>
+              <td>Frank</td>
+              <td>frank@gmail.com</td>
+              <td>Southampton, UK</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 id="modal_anchor">Modal</h3>
+    <div class="modal-dialog" style="margin: 0px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title">Modal Title</span>
+          <div class="modal-close">X</div>
+        </div>
+        <div class="modal-body">
+          <div> This is a modal body </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bp-btn-default">（默认）default</button>
+          <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-dialog modal-sm" style="margin: 0px; margin-top: 20px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title">弹窗啊都是弹</span>
+          <div class="modal-close">X</div>
+        </div>
+        <div class="modal-body">
+          <div> This is a modal body </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bp-btn-primary">（确定）primary</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

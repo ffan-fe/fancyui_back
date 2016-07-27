@@ -1,0 +1,31 @@
+@media screen {
+  #wrap.skin-wrap{
+    background-color: rgb(255, 171, 66);
+    .content-container {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      right: 180px;
+      padding: 36px;
+      padding-top: 0px;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.80);
+      overflow: auto;
+    }
+  }
+  .skin-wrap {
+    #bg_magic_circle {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  #wrap.skin-wrap{
+    .content-container {
+      position: static;
+      width: 100%;
+      border-radius: 0px;
+    }
+  }
+}
