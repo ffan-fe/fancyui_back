@@ -1,21 +1,6 @@
 <fancy-nav></fancy-nav>
-<!--<aside class="skin-aside-menu">
-  <ul class="list-unstyled">
-    <li class="menu-item"><a href ui-sref="skin.gettingStarted">Getting started</a></li>
-    <li class="menu-item">
-      <div class="title">Component list</div>
-      <ul class="list-unstyled">
-        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('button')">Button</a></li>
-        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('form')">Form</a></li>
-        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('panel')">Panel</a></li>
-        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('table')">Table</a></li>
-        <li class="menu-item"><a href="javascript:;" ng-click="vm.goAnchor('modal')">Modal</a></li>
-      </ul>
-    </li>
-  </ul>
-</aside>-->
 <section class="content-container">
-  <div>
+  <section>
     <h3 id="button_anchor">Button</h3>
     <div class="form-group">
       <div>基本皮肤:</div>
@@ -24,6 +9,12 @@
         <button type="button" class="btn bp-btn-primary">（确定）primary</button>
         <button type="button" class="btn bp-btn-danger">（删除）danger</button>
       </div>
+      <div class="code-container">
+              <pre>
+&lt;button type="button" class="btn bp-btn-default"&gt;（默认）default&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary"&gt; (确定）primary&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-danger"&gt;（删除）danger&lt;/button&gt;</pre>
+      </div>
     </div>
     <div class="form-group">
       <div>Disable状态:</div>
@@ -31,6 +22,12 @@
         <button type="button" class="btn bp-btn-default" disabled>（默认尺寸）Default button</button>
         <button type="button" class="btn bp-btn-primary" disabled>（默认尺寸）Default button</button>
         <button type="button" class="btn bp-btn-danger" disabled>（默认尺寸）Default button</button>       
+      </div>
+      <div class="code-container">
+        <pre>
+&lt;button type="button" class="btn bp-btn-default" disabled&gt;（默认尺寸）Default button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary" disabled&gt;（默认尺寸）Primary button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-danger" disabled&gt;（默认尺寸）Danger button&lt;/button&gt;</pre>
       </div>
     </div>
     <div class="form-group">
@@ -50,8 +47,24 @@
         </p>
       </div>
     </div>
-  </div>
-  <div>
+    <div class="code-container">
+      <pre>
+&lt;button type="button" class="btn bp-btn-primary btn-xs"&gt;（超小尺寸）Extra small button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary btn-sm"&gt;（小按钮）Small button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary"&gt;（默认尺寸）Default button&lt;/button&gt;
+&lt;button type="button" class="btn bp-btn-primary btn-lg"&gt;（大按钮）Large button&lt;/button&gt;</pre>
+    </div>
+  </section>
+  <section>
+    <h3 id="container_anchor">Container</h3>
+    <div class="bp-container">
+      <div class="form-group">基本容器</div>
+    </div>
+    <div class="code-container">
+      <pre>&lt;div class="bp-container"&gt;&lt;/div&gt;</pre>
+    </div>
+  </section>
+  <!--<div>
     <h3 id="form_anchor">Form</h3>
     <div class="form-group">
       <label class="control-label"><span class="required-star">*</span>龙破斩的咒文:</label>
@@ -76,18 +89,50 @@
         <option>4</option>
       </select>
     </div>
-  </div>
-  <div>
+  </div>-->
+  <section>
     <h3 id="panel_anchor">Panel</h3>
     <div class="panel bp-panel-primary">
       <div class="panel-heading">
-        <div class="panel-title">通常的Panel</div>
+        <div class="panel-title">Title</div>
       </div>
-      <div class="panel-body">你能跟上我的节奏么</div>
+      <div class="panel-body">内容区域</div>
+    </div>
+    <div class="code-container">
+      <pre>
+&lt;div class="panel bp-panel-primary"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;Title&lt;/div&gt;
+  &lt;/div>
+  &lt;div class="panel-body"&gt;
+    内容区域
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+    <div class="panel bp-panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">Title</div>
+      </div>
+      <div class="panel-body">内容区域</div>
       <div class="panel-footer">
         <button type="button" class="btn bp-btn-default">（默认）default</button>
         <button type="button" class="btn bp-btn-primary">（确定）primary</button>
       </div>
+    </div>
+    <div class="code-container">
+      <pre>
+&lt;div class="panel bp-panel-primary"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;Title&lt;/div&gt;
+  &lt;/div>
+  &lt;div class="panel-body"&gt;
+    内容区域
+  &lt;/div&gt;
+  &lt;div class="panel-footer"&gt;
+    &lt;button type="button" class="btn bp-btn-primary"&gt;确定&lt;/button&gt;
+    &lt;button type="button" class="btn bp-btn-default"&gt;取消&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
     </div>
     <div class="panel bp-panel-danger">
       <div class="panel-heading">
@@ -99,9 +144,50 @@
         <button type="button" class="btn bp-btn-primary">（确定）primary</button>
       </div>
     </div>
-  </div>
-  <div>
-    <h3 id="table_anchor">表格</h3>
+    <div class="code-container">
+      <pre>
+&lt;div class="panel bp-panel-danger"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;Title&lt;/div&gt;
+  &lt;/div>
+  &lt;div class="panel-body"&gt;
+    嘿~在这停顿
+  &lt;/div&gt;
+  &lt;div class="panel-footer"&gt;
+    &lt;button type="button" class="btn bp-btn-primary"&gt;确定&lt;/button&gt;
+    &lt;button type="button" class="btn bp-btn-default"&gt;取消&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+    <div class="panel bp-panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">按钮居中标题</div>
+      </div>
+      <div class="panel-body">按钮居中</div>
+      <div class="panel-footer bp-panel-btn-center">
+        <button type="button" class="btn bp-btn-primary">确定</button>
+        <button type="button" class="btn bp-btn-default">取消</button>
+      </div>
+    </div>
+    <div class="code-container">
+      <pre>&lt;div class="panel-footer bp-panel-btn-center"&gt;</pre>
+    </div>
+    <div class="panel bp-panel-danger" style="border: 1px solid #ececec;">
+      <div class="panel-heading">
+        <div class="panel-title">按钮局左标题</div>
+      </div>
+      <div class="panel-body">按钮局左</div>
+      <div class="panel-footer bp-panel-btn-left">
+        <button type="button" class="btn bp-btn-primary">确定</button>
+        <button type="button" class="btn bp-btn-default">取消</button>
+      </div>
+    </div>
+    <div class="code-container">
+      <pre>&lt;div class="panel-footer bp-panel-btn-left"&gt;</pre>
+    </div>
+  </section>
+  <section>
+    <h3 id="table_anchor">Table</h3>
     <table class="table table-condensed table-bordered table-striped table-hover">
       <thead>
         <tr>
@@ -143,6 +229,25 @@
         </tr>
       </tbody>
     </table>
+    <div class="code-container">
+                <pre>
+&lt;table class="table table-condensed table-bordered table-striped table-hover"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      ...
+    &lt;/tr&gt;
+    ...
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;John&lt;/td&gt;
+      ...
+    &lt;/tr&gt;
+    ...
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+    </div>
     <div class="panel bp-panel-primary">
       <div class="panel-heading">
         <div class="panel-title">Panel + Table</div>
@@ -191,8 +296,22 @@
         </table>
       </div>
     </div>
-  </div>
-  <div>
+    <div class="code-container">
+      <pre>
+&lt;div class="panel bp-panel-primary"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;div class="panel-title"&gt;Panel + Table&lt;/div&gt;
+  &lt;/div>
+  &lt;div class="panel-body"&gt;
+    &lt;table class="table table-condensed table-bordered table-striped table-hover"&gt;
+      &lt;thead&gt; ... &lt;/thead&gt;
+      &lt;tbody&gt; ... &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </section>
+  <section>
     <h3 id="modal_anchor">Modal</h3>
     <div class="modal-dialog" style="margin: 0px;">
       <div class="modal-content">
@@ -201,13 +320,31 @@
           <div class="modal-close">X</div>
         </div>
         <div class="modal-body">
-          <div> This is a modal body </div>
+          <div>默认大小 且有两个按钮</div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn bp-btn-default">（默认）default</button>
           <button type="button" class="btn bp-btn-primary">（确定）primary</button>
         </div>
       </div>
+    </div>
+    <div class="code-container">
+      <pre>
+&lt;div class="modal-dialog"&gt;
+  &lt;div class="modal-content"&gt;
+    &lt;div class="modal-header"&gt;
+      &lt;span class="modal-title"&gt;Modal Title&lt;/span&gt;
+      &lt;div class="modal-close"&gt;X&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      &lt;div&gt;默认大小 且有两个按钮&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-footer"&gt;
+      &lt;button type="button" class="btn bp-btn-default"&gt;（默认）default&lt;/button&gt;
+      &lt;button type="button" class="btn bp-btn-primary"&gt;（确定）primary&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>        	
     </div>
     <div class="modal-dialog modal-sm" style="margin: 0px; margin-top: 20px;">
       <div class="modal-content">
@@ -223,5 +360,249 @@
         </div>
       </div>
     </div>
+    <div class="code-container">
+      <pre>
+&lt;div class="modal-dialog modal-sm"&gt;
+  &lt;div class="modal-content"&gt;
+    &lt;div class="modal-header"&gt;
+      &lt;span class="modal-title"&gt;弹窗啊都是弹&lt;/span&gt;
+      &lt;div class="modal-close"&gt;X&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      &lt;div&gt; This is a modal body &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-footer"&gt;
+      &lt;button type="button" class="btn bp-btn-primary"&gt;（确定）primary&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>            	
+    </div>
+  </section>
+  <section>
+    <h3 id="form_anchor">Form</h3>
+    <div class="panel bp-panel-primary">
+    <div class="panel-heading">
+      <div class="panel-title">Form</div>
+    </div>
+    <div class="panel-body">
+      <form class="form-horizontal">
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input"><span class="required-star">*</span>用户名: </label>
+          <div class="col-lg-10">
+            <input class="form-control" type="text" placeholder="请输入用户名" />
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input"><span class="required-star">*</span>密码: </label>
+          <div class="col-lg-10">
+            <input class="form-control" type="password" placeholder="密码" />
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input"><span class="required-star">*</span>再次输入密码: </label>
+          <div class="col-lg-10">
+            <input class="form-control" type="password" placeholder="再次输入密码" />
+          </div>
+        </div>
+        <div class="form-group form-item has-error">
+          <label class="col-lg-2 control-label" for="input"><span class="required-star">*</span>邮箱: </label>
+          <div class="col-lg-10">
+            <input class="form-control" type="text" placeholder="出现了一个错误" />
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">请输入优惠码: </label>
+          <div class="col-lg-10">
+            <input class="form-control" type="password" placeholder="暂不可用" disabled />
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">复选框列表: </label>
+          <div class="col-lg-10">
+            <div class="checkbox">
+              <label><input type="checkbox" checked />我有一个秘密</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" disabled>禁用我可没时间和你玩游戏</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" />无法战胜大自然的力量</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">单选框列表: </label>
+          <div class="col-lg-10">
+            <div class="radio">
+              <label><input name="skboys" type="radio" checked />我有一个秘密</label>
+            </div>
+            <div class="radio">
+              <label><input name="skboys" type="radio" disabled>禁用我可没时间和你玩游戏</label>
+            </div>
+            <div class="radio">
+              <label><input name="skboys" type="radio" />无法战胜大自然的力量</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">横向复选框列表: </label>
+          <div class="col-lg-10">
+            <label class="checkbox-inline"><input type="checkbox" checked />我有一个秘密</label>
+            <label class="checkbox-inline"><input type="checkbox" disabled>禁用我可没时间和你玩游戏</label>
+            <label class="checkbox-inline"><input type="checkbox" />无法战胜大自然的力量</label>
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">单选框列表: </label>
+          <div class="col-lg-10">
+            <label class="radio-inline"><input name="skboys-inline" type="radio" checked />我有一个秘密</label>
+            <label class="radio-inline"><input name="skboys-inline" type="radio" disabled>禁用我可没时间和你玩游戏</label>
+            <label class="radio-inline"><input name="skboys-inline" type="radio" />无法战胜大自然的力量</label>
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <div class="col-lg-10 col-lg-offset-2">
+            <label class="radio-inline"><input name="skboys-inline" type="radio" checked />col offset</label>
+            <label class="radio-inline"><input name="skboys-inline" type="radio" disabled>禁用我可没时间和你玩游戏</label>
+            <label class="radio-inline"><input name="skboys-inline" type="radio" />无法战胜大自然的力量</label>
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">选择你的编号: </label>
+          <div class="col-lg-10">
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-item">
+          <label class="col-lg-2 control-label" for="input">多选择你的编号: </label>
+          <div class="col-lg-10">
+            <select multiple class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </section>
+  <div class="code-container">
+    <pre>
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group form-item"&gt;
+    &lt;label class="col-lg-2 control-label" for="input"&gt;&lt;span class="required-star"&gt;*&lt;/span&gt;用户名: &lt;/label&gt;
+    &lt;div class="col-lg-10"&gt;
+      &lt;input class="form-control" type="text" placeholder="请输入用户名" /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;&lt;span class="required-star"&gt;*&lt;/span&gt;密码: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;input class="form-control" type="password" placeholder="密码" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;&lt;span class="required-star"&gt;*&lt;/span&gt;再次输入密码: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;input class="form-control" type="password" placeholder="再次输入密码" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item has-error"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;&lt;span class="required-star"&gt;*&lt;/span&gt;邮箱: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;input class="form-control" type="text" placeholder="出现了一个错误" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;请输入优惠码: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;input class="form-control" type="password" placeholder="暂不可用" disabled /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;复选框列表: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;&lt;input type="checkbox" checked /&gt;我有一个秘密&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;&lt;input type="checkbox" disabled&gt;禁用我可没时间和你玩游戏&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;&lt;input type="checkbox" /&gt;无法战胜大自然的力量&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;单选框列表: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;div class="radio"&gt;
+      &lt;label&gt;&lt;input name="skboys" type="radio" checked /&gt;我有一个秘密&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="radio"&gt;
+      &lt;label&gt;&lt;input name="skboys" type="radio" disabled&gt;禁用我可没时间和你玩游戏&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="radio"&gt;
+      &lt;label&gt;&lt;input name="skboys" type="radio" /&gt;无法战胜大自然的力量&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;横向复选框列表: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;label class="checkbox-inline"&gt;&lt;input type="checkbox" checked /&gt;我有一个秘密&lt;/label&gt;
+    &lt;label class="checkbox-inline"&gt;&lt;input type="checkbox" disabled&gt;禁用我可没时间和你玩游戏&lt;/label&gt;
+    &lt;label class="checkbox-inline"&gt;&lt;input type="checkbox" /&gt;无法战胜大自然的力量&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;单选框列表: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;label class="radio-inline"&gt;&lt;input name="skboys-inline" type="radio" checked /&gt;我有一个秘密&lt;/label&gt;
+    &lt;label class="radio-inline"&gt;&lt;input name="skboys-inline" type="radio" disabled&gt;禁用我可没时间和你玩游戏&lt;/label&gt;
+    &lt;label class="radio-inline"&gt;&lt;input name="skboys-inline" type="radio" /&gt;无法战胜大自然的力量&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;div class="col-lg-10 col-lg-offset-2"&gt;
+    &lt;label class="radio-inline"&gt;&lt;input name="skboys-inline" type="radio" checked /&gt;col offset&lt;/label&gt;
+    &lt;label class="radio-inline"&gt;&lt;input name="skboys-inline" type="radio" disabled&gt;禁用我可没时间和你玩游戏&lt;/label&gt;
+    &lt;label class="radio-inline"&gt;&lt;input name="skboys-inline" type="radio" /&gt;无法战胜大自然的力量&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;选择你的编号: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;select class="form-control"&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group form-item"&gt;
+  &lt;label class="col-lg-2 control-label" for="input"&gt;多选择你的编号: &lt;/label&gt;
+  &lt;div class="col-lg-10"&gt;
+    &lt;select multiple class="form-control"&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>            	
   </div>
 </section>
