@@ -12,7 +12,7 @@ export default class SkinController {
     let container = document.getElementById('main-container');
     container.style.opacity = 0;
     TweenMax.to(container, .5, {opacity: 1, ease: 'easeIn'});
-    $.getScript('https://buttons.github.io/buttons.js');
+    // $.getScript('https://buttons.github.io/buttons.js');
   }
   goAnchor(anchorName) {
     this.$location.hash(`${anchorName}_anchor`)

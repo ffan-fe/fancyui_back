@@ -42,12 +42,12 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "anaheim": "0.0.6",
     "angular": "^1.5.7",
     "angular-touch": "^1.5.7",
     "angular-ui-router": "^0.3.1",
     "bootstrap": "^3.3.6",
     "bp-admin-skin": "^1.0.3",
+    "fancyui": "0.0.6",
     "gsap": "^1.18.5",
     "jquery": "^3.1.0",
     "ng-annotate-loader": "^0.1.0"
