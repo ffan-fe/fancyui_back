@@ -4,6 +4,7 @@ import component from './ui.component';
 import ButtonShow from './button/'
 import CheckboxShow from './checkbox';
 import RadioboxShow from './radiobox';
+import CitySelector from './cityselector';
 import GetStarted from './get-started/get-started';
 
 'use strict';
@@ -13,6 +14,7 @@ export default angular.module('ui', [
   ButtonShow.name,
   CheckboxShow.name,
   RadioboxShow.name,
+  CitySelector.name,
   GetStarted.name
 ])
   .component('ui', component)
@@ -30,6 +32,10 @@ export default angular.module('ui', [
       .state('ui.radiobox', {
         url: '/radiobox',
         template: '<radiobox-show></radiobox-show>'
+      })
+      .state('ui.cityselector', {
+        url: '/cityselector',
+        template: '<city-selector-show></city-selector-show>'
       })
       .state('ui.getstarted', {
         url: '/getstarted',
