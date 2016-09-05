@@ -7,6 +7,6 @@ export default class UIController {
     let container = document.getElementById('main-container');
     container.style.opacity = 0;
     TweenMax.to(container, .5, {opacity: 1, ease: 'easeIn'});
-     $.getScript('https://buttons.github.io/buttons.js');
+    
   }
 }
