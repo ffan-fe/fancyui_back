@@ -5,6 +5,7 @@ import ButtonShow from './button/'
 import CheckboxShow from './checkbox';
 import RadioboxShow from './radiobox';
 import TransferShow from './transfer';
+import CitySelector from './cityselector';
 import GetStarted from './get-started/get-started';
 
 'use strict';
@@ -15,6 +16,7 @@ export default angular.module('ui', [
   CheckboxShow.name,
   RadioboxShow.name,
   TransferShow.name,
+  CitySelector.name,
   GetStarted.name
 ])
   .component('ui', component)
@@ -36,6 +38,9 @@ export default angular.module('ui', [
       .state('ui.transfer', {
         url: '/transfer',
         template: '<transfer-show></transfer-show>'
+      .state('ui.cityselector', {
+        url: '/cityselector',
+        template: '<city-selector-show></city-selector-show>'
       })
       .state('ui.getstarted', {
         url: '/getstarted',
