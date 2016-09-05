@@ -38,6 +38,7 @@ export default angular.module('ui', [
       .state('ui.transfer', {
         url: '/transfer',
         template: '<transfer-show></transfer-show>'
+      })
       .state('ui.cityselector', {
         url: '/cityselector',
         template: '<city-selector-show></city-selector-show>'
