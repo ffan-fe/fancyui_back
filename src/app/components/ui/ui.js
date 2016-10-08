@@ -6,6 +6,7 @@ import CheckboxShow from './checkbox';
 import RadioboxShow from './radiobox';
 import TransferShow from './transfer';
 import CitySelector from './cityselector';
+import Datetimepicker from './datetimepicker';
 import GetStarted from './get-started/get-started';
 
 'use strict';
@@ -17,7 +18,8 @@ export default angular.module('ui', [
   RadioboxShow.name,
   TransferShow.name,
   CitySelector.name,
-  GetStarted.name
+  GetStarted.name,
+  Datetimepicker.name
 ])
   .component('ui', component)
   .config(($stateProvider) => {
@@ -38,12 +40,17 @@ export default angular.module('ui', [
       .state('ui.transfer', {
         url: '/transfer',
         template: '<transfer-show></transfer-show>'
+      })
       .state('ui.cityselector', {
         url: '/cityselector',
         template: '<city-selector-show></city-selector-show>'
       })
+      .state('ui.datetimepicker', {
+        url: '/datetimepicker',
+        template: '<datetimepicker-show></datetimepicker-show>'
+      })
       .state('ui.getstarted', {
         url: '/getstarted',
         template: '<ui-get-started></ui-get-started>'
-      });
-  });
+      })
+  })
