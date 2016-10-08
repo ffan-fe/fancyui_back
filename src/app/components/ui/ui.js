@@ -7,6 +7,8 @@ import RadioboxShow from './radiobox';
 import TransferShow from './transfer';
 import CitySelector from './cityselector';
 import Datetimepicker from './datetimepicker';
+import alertTest from './alert/index.js';
+import hintTest from './hint/index.js';
 import GetStarted from './get-started/get-started';
 
 'use strict';
@@ -18,8 +20,10 @@ export default angular.module('ui', [
   RadioboxShow.name,
   TransferShow.name,
   CitySelector.name,
-  GetStarted.name,
-  Datetimepicker.name
+  Datetimepicker.name,
+  alertTest.name,
+  hintTest.name,
+  GetStarted.name
 ])
   .component('ui', component)
   .config(($stateProvider) => {
