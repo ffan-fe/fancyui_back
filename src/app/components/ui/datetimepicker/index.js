@@ -1,5 +1,4 @@
 import angular from 'angular';
-import 'bootstrap';
 import template from './template.html';
 import controller from './controller';
 import {Datetimepicker} from 'fancyui';
