@@ -1,7 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import {Radiobox, RadioboxGroup} from 'anaheim';
+import {Radiobox, RadioboxGroup} from 'fancyui';
 import template from './template.html';
 import controller from './controller';
 
